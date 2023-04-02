@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/VladyBarvy/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/VladyBarvy/frontend-project-46/actions)",
-  "main": "index.js",
+  "main": "bin/gendiff.js",
   "bin": {
     "gendiff": "bin/gendiff.js"
   },
@@ -18,8 +18,10 @@
   "bugs": {
     "url": "https://github.com/VladyBarvy/frontend-project-46/issues"
   },
+  "type": "module",
   "homepage": "https://github.com/VladyBarvy/frontend-project-46#readme",
   "dependencies": {
-    "commander": "^10.0.0"
+    "commander": "^10.0.0",
+    "lodash": "^4.17.21"
   }
 }
