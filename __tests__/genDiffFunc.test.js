@@ -1,10 +1,13 @@
-import { fileURLToPath } from 'url';
-import path, { dirname } from 'path';
+//import { fileURLToPath } from 'url';
+import url from 'url';
+//import path, { dirname } from 'path';
+import path, { dirname } from 'node:path';
 import { genDiff } from '../src/genDiffFunc.js';
 
-const __filename = fileURLToPath(import.meta.url);
+//const __filename = fileURLToPath(import.meta.url);
+//const __dirname = dirname(__filename);
+const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-
 
 const getFixturePath = (fileName) => path.join(__dirname, '..', '__fixtures__', fileName);
 

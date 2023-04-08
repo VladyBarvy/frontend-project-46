@@ -11,8 +11,8 @@ lint:
 	npx eslint
 
 test:
-	npx jest --verbose
+	NODE_OPTIONS=--experimental-vm-modules npx jest
 
-cover:
+test-coverage:
 	npx jest --coverage
 
