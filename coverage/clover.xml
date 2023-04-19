@@ -1,36 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1681060540314" clover="3.2.0">
-  <project timestamp="1681060540314" name="All files">
-    <metrics statements="24" coveredstatements="23" conditionals="21" coveredconditionals="20" methods="4" coveredmethods="4" elements="49" coveredelements="47" complexity="0" loc="24" ncloc="24" packages="1" files="2" classes="2"/>
-    <file name="genDiffFunc.js" path="/home/barvv/workout/080423/frontend-project-46/src/genDiffFunc.js">
-      <metrics statements="17" coveredstatements="17" conditionals="15" coveredconditionals="15" methods="3" coveredmethods="3"/>
-      <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
-      <line num="8" count="4" type="stmt"/>
-      <line num="9" count="4" type="stmt"/>
-      <line num="11" count="4" type="stmt"/>
-      <line num="12" count="20" type="stmt"/>
-      <line num="14" count="20" type="stmt"/>
-      <line num="15" count="72" type="cond" truecount="4" falsecount="0"/>
-      <line num="16" count="8" type="stmt"/>
-      <line num="17" count="64" type="cond" truecount="4" falsecount="0"/>
-      <line num="18" count="20" type="stmt"/>
-      <line num="20" count="44" type="cond" truecount="2" falsecount="0"/>
-      <line num="21" count="12" type="stmt"/>
-      <line num="22" count="32" type="cond" truecount="4" falsecount="0"/>
-      <line num="23" count="16" type="stmt"/>
-      <line num="25" count="16" type="stmt"/>
-      <line num="29" count="20" type="stmt"/>
-      <line num="31" count="4" type="stmt"/>
-    </file>
-    <file name="parsers.js" path="/home/barvv/workout/080423/frontend-project-46/src/parsers.js">
-      <metrics statements="7" coveredstatements="6" conditionals="6" coveredconditionals="5" methods="1" coveredmethods="1"/>
-      <line num="5" count="1" type="stmt"/>
-      <line num="6" count="8" type="stmt"/>
-      <line num="10" count="8" type="cond" truecount="4" falsecount="0"/>
-      <line num="11" count="4" type="stmt"/>
-      <line num="15" count="4" type="cond" truecount="1" falsecount="1"/>
-      <line num="16" count="4" type="stmt"/>
-      <line num="19" count="0" type="stmt"/>
-    </file>
+<coverage generated="1681914550131" clover="3.2.0">
+  <project timestamp="1681914550131" name="All files">
+    <metrics statements="79" coveredstatements="77" conditionals="47" coveredconditionals="45" methods="15" coveredmethods="15" elements="141" coveredelements="137" complexity="0" loc="79" ncloc="79" packages="3" files="8" classes="8"/>
+    <package name="__fixtures__">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="nestedDiff.js" path="/home/barvv/workout/080423/frontend-project-46/__fixtures__/nestedDiff.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="plainDiff.js" path="/home/barvv/workout/080423/frontend-project-46/__fixtures__/plainDiff.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="formatters">
+      <metrics statements="55" coveredstatements="54" conditionals="26" coveredconditionals="25" methods="11" coveredmethods="11"/>
+      <file name="index.js" path="/home/barvv/workout/080423/frontend-project-46/formatters/index.js">
+        <metrics statements="6" coveredstatements="5" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="5" type="cond" truecount="3" falsecount="1"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+      </file>
+      <file name="json.js" path="/home/barvv/workout/080423/frontend-project-46/formatters/json.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="plain.js" path="/home/barvv/workout/080423/frontend-project-46/formatters/plain.js">
+        <metrics statements="22" coveredstatements="22" conditionals="12" coveredconditionals="12" methods="4" coveredmethods="4"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="6" count="36" type="stmt"/>
+        <line num="8" count="36" type="stmt"/>
+        <line num="9" count="26" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="11" count="20" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="14" type="stmt"/>
+        <line num="14" count="6" type="stmt"/>
+        <line num="16" count="36" type="stmt"/>
+        <line num="17" count="36" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="32" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="10" type="stmt"/>
+        <line num="21" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="8" type="stmt"/>
+        <line num="23" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="8" type="stmt"/>
+        <line num="26" count="6" type="stmt"/>
+        <line num="28" count="10" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+      </file>
+      <file name="stylish.js" path="/home/barvv/workout/080423/frontend-project-46/formatters/stylish.js">
+        <metrics statements="26" coveredstatements="26" conditionals="10" coveredconditionals="10" methods="5" coveredmethods="5"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="230" type="cond" truecount="2" falsecount="0"/>
+        <line num="5" count="160" type="stmt"/>
+        <line num="7" count="70" type="stmt"/>
+        <line num="8" count="70" type="stmt"/>
+        <line num="9" count="70" type="stmt"/>
+        <line num="10" count="186" type="stmt"/>
+        <line num="12" count="70" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="10" type="stmt"/>
+        <line num="18" count="10" type="stmt"/>
+        <line num="19" count="10" type="stmt"/>
+        <line num="20" count="36" type="stmt"/>
+        <line num="21" count="36" type="stmt"/>
+        <line num="22" count="36" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="24" count="32" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="10" type="stmt"/>
+        <line num="26" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="27" count="6" type="stmt"/>
+        <line num="28" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="29" count="8" type="stmt"/>
+        <line num="31" count="8" type="stmt"/>
+        <line num="33" count="10" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src">
+      <metrics statements="24" coveredstatements="23" conditionals="21" coveredconditionals="20" methods="4" coveredmethods="4"/>
+      <file name="genDiffFunc.js" path="/home/barvv/workout/080423/frontend-project-46/src/genDiffFunc.js">
+        <metrics statements="17" coveredstatements="17" conditionals="15" coveredconditionals="15" methods="3" coveredmethods="3"/>
+        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="12" count="25" type="stmt"/>
+        <line num="14" count="25" type="stmt"/>
+        <line num="15" count="90" type="cond" truecount="4" falsecount="0"/>
+        <line num="16" count="10" type="stmt"/>
+        <line num="17" count="80" type="cond" truecount="4" falsecount="0"/>
+        <line num="18" count="25" type="stmt"/>
+        <line num="20" count="55" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="15" type="stmt"/>
+        <line num="22" count="40" type="cond" truecount="4" falsecount="0"/>
+        <line num="23" count="20" type="stmt"/>
+        <line num="25" count="20" type="stmt"/>
+        <line num="29" count="25" type="stmt"/>
+        <line num="31" count="5" type="stmt"/>
+      </file>
+      <file name="parsers.js" path="/home/barvv/workout/080423/frontend-project-46/src/parsers.js">
+        <metrics statements="7" coveredstatements="6" conditionals="6" coveredconditionals="5" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="10" count="10" type="cond" truecount="4" falsecount="0"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="15" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="16" count="6" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
