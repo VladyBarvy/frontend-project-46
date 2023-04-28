@@ -8,21 +8,33 @@ const plainFormatter = (tree) => {
       const valueType = (val) => {
         if (_.isObject(val)) {
           return '[complex value]';
-        } if (_.isString(val)) {
+        } 
+        
+        if (_.isString(val)) {
           return `'${val}'`;
         }
+
         return val;
       };
+
       const newName = [...ancestry, name].join('');
+
       if (status === 'removed') {
         return `Property '${newName}' was removed`;
-      } if (status === 'added') {
+      } 
+      
+      if (status === 'added') {
         return `Property '${newName}' was added with value: ${valueType(value)}`;
-      } if (status === 'updated') {
+      } 
+      
+      if (status === 'updated') {
         return `Property '${newName}' was updated. From ${valueType(object.oldValue)} to ${valueType(value)}`;
-      } if (status === 'nested') {
+      }
+      
+      if (status === 'nested') {
         return iter(value, `${newName}.`);
       }
+      
       return [];
     });
     return `${stylishedObjects.join('\n')}`;
