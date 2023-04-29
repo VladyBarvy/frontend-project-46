@@ -1,4 +1,3 @@
-
 import _ from 'lodash';
 
 const stylish = (currentKey, currentValue, depth) => {
