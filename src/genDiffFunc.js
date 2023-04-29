@@ -39,3 +39,4 @@ const genDiff = (filePath1, filePath2, formatType = 'stylish') => {
 };
 
 export { genDiff } ;
+
