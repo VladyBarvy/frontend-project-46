@@ -38,4 +38,4 @@ const genDiff = (filePath1, filePath2, formatType = 'stylish') => {
   return formatter(findDifferences(firstFile, secondFile), formatType);
 };
 
-export { genDiff };
+export default genDiff;
