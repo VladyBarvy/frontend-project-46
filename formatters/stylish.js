@@ -33,7 +33,7 @@ const stylishFormatter = (tree) => {
       if (status === 'nested') {
         return `  ${name}: ${iter(value, depth + 2)}`;
       }
-      //return `  ${line}`;
+      return `  ${line}`;
     });
     return `{\n${indentBefore}${stylishedObjects.join(`\n${indentBefore}`)}\n${bracketIndent}}`;
   };
