@@ -20,19 +20,20 @@ const stylishFormatter = (tree) => {
       const line = stylish(name, value, depth + 2);
       if (status === 'removed') {
         return `- ${line}`;
-      } 
+      }
       if (status === 'added') {
         return `+ ${line}`;
-      } 
+      }
       if (status === 'unchanged') {
         return `  ${line}`;
-      } 
+      }
       if (status === 'updated') {
         return [`- ${stylish(name, object.oldValue, depth + 2)}`, `+ ${line}`];
-      } 
+      }
       if (status === 'nested') {
         return `  ${name}: ${iter(value, depth + 2)}`;
       }
+      return ``;
     });
     return `{\n${indentBefore}${stylishedObjects.join(`\n${indentBefore}`)}\n${bracketIndent}}`;
   };

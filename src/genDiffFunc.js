@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import { parserFunc } from './parsers.js';
+import parserFunc from './parsers.js';
 import formatter from '../formatters/index.js';
 
 const genDiff = (filePath1, filePath2, formatType = 'stylish') => {
@@ -29,4 +29,4 @@ const genDiff = (filePath1, filePath2, formatType = 'stylish') => {
   };
   return formatter(findDifferences(firstFile, secondFile), formatType);
 };
-export { genDiff };
+export default genDiff;
