@@ -1,13 +1,6 @@
 import _ from 'lodash';
-import parserFunc from './parsers.js';
-import formatter from '../formatters/index.js';
-import findDifferences from './findDiffFunc.js';
 
-const genDiff = (filePath1, filePath2, formatType = 'stylish') => {
-  const firstFile = parserFunc(filePath1);
-  const secondFile = parserFunc(filePath2);
-  /*
-  const findDifferences = (file1, file2) => {
+const findDifferences = (file1, file2) => {
     const allKeys = _.sortBy(_.union(Object.keys(file1), Object.keys(file2)));
     const differences = allKeys.map((key) => {
       if (_.has(file1, key) && !_.has(file2, key)) {
@@ -28,7 +21,5 @@ const genDiff = (filePath1, filePath2, formatType = 'stylish') => {
     });
     return differences;
   };
-*/
-  return formatter(findDifferences(firstFile, secondFile), formatType);
-};
-export default genDiff;
+
+  export default findDifferences;

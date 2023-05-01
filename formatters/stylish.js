@@ -18,21 +18,11 @@ const stylishFormatter = (tree) => {
     const stylishedObjects = objects.flatMap((object) => {
       const { name, value, status } = object;
       const line = stylish(name, value, depth + 2);
-      if (status === 'removed') {
-        return `- ${line}`;
-      }
-      if (status === 'added') {
-        return `+ ${line}`;
-      }
-      if (status === 'unchanged') {
-        return `  ${line}`;
-      }
-      if (status === 'updated') {
-        return [`- ${stylish(name, object.oldValue, depth + 2)}`, `+ ${line}`];
-      }
-      if (status === 'nested') {
-        return `  ${name}: ${iter(value, depth + 2)}`;
-      }
+      if (status === 'removed') { return `- ${line}`; }
+      if (status === 'added') { return `+ ${line}`; }
+      if (status === 'unchanged') { return `  ${line}`; }
+      if (status === 'updated') { return [`- ${stylish(name, object.oldValue, depth + 2)}`, `+ ${line}`]; }
+      if (status === 'nested') { return `  ${name}: ${iter(value, depth + 2)}`; }
       return `  ${line}`;
     });
     return `{\n${indentBefore}${stylishedObjects.join(`\n${indentBefore}`)}\n${bracketIndent}}`;
