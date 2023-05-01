@@ -12,8 +12,8 @@ const plainFormatter = (tree) => {
       const newName = [...ancestry, name].join('');
       if (status === 'removed') { return `Property '${newName}' was removed`; }
       if (status === 'added') { return `Property '${newName}' was added with value: ${valueType(value)}`; }
-      if (status === 'updated') { 
-        return `Property '${newName}' was updated. From ${valueType(object.oldValue)} to ${valueType(value)}`; 
+      if (status === 'updated') {
+        return `Property '${newName}' was updated. From ${valueType(object.oldValue)} to ${valueType(value)}`;
       }
       if (status === 'nested') { return iter(value, `${newName}.`); }
       return [];

@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import parserFunc from './parsers.js';
 import formatter from '../formatters/index.js';
 import findDifferences from './findDiffFunc.js';
