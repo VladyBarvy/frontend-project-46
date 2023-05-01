@@ -1,4 +1,5 @@
 import _ from 'lodash';
+
 const findDifferences = (file1, file2) => {
   const allKeys = _.sortBy(_.union(Object.keys(file1), Object.keys(file2)));
   const differences = allKeys.map((key) => {
@@ -15,7 +16,7 @@ const findDifferences = (file1, file2) => {
       return { name: key, value: findDifferences(file1[key], file2[key]), status: 'nested' };
     }
     return {
-       name: key, oldValue: file1[key], value: file2[key], status: 'updated',
+      name: key, oldValue: file1[key], value: file2[key], status: 'updated',
     };
   });
   return differences;
