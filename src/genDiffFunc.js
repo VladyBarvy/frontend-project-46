@@ -4,7 +4,9 @@ import findDifferences from './findDiffFunc.js';
 
 const genDiff = (filePath1, filePath2, formatType = 'stylish') => {
   const firstFile = parserFunc(filePath1);
+  //console.log(firstFile);
   const secondFile = parserFunc(filePath2);
+  //console.log(secondFile);
   /*
   const findDifferences = (file1, file2) => {
     const allKeys = _.sortBy(_.union(Object.keys(file1), Object.keys(file2)));
