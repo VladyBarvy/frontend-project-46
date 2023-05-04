@@ -7,4 +7,5 @@ const genDiff = (filePath1, filePath2, formatType = 'stylish') => {
   const secondFile = parserFunc(filePath2);
   return formatter(findDifferences(firstFile, secondFile), formatType);
 };
+
 export default genDiff;
