@@ -15,7 +15,9 @@ const parserFunc = (filePath) => {
   if (path.extname(absolutePath).slice(1) === 'json') {
     return JSON.parse(readFileSync(absolutePath, 'utf8')); // преобразование данных из файла в удобночитаемый формат
   }
-  return 'unexpected format of file'; // если ни один из предполагаемых форматов не определён, то возвращаем сообщение
+  if (path.extname(absolutePath).slice(1) !== 'yml' || path.extname(absolutePath).slice(1) !== 'yaml' || path.extname(absolutePath).slice(1) !== 'json') {
+    return 'unexpected format of file'; // если ни один из предполагаемых форматов не определён, то возвращаем сообщение
+  }
 };
 
 export default parserFunc;
