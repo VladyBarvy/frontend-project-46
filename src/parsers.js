@@ -1,7 +1,6 @@
 import { load } from 'js-yaml';
 import { readFileSync } from 'node:fs';
 import { resolve, extname } from 'node:path';
-//import path from 'path';
 import { cwd } from 'node:process';
 
 const parserFunc = (filePath) => {
