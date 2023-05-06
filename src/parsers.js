@@ -7,7 +7,7 @@ const parserFunc = (filePath) => {
   const absolutePath = path.resolve(process.cwd(), filePath);
   // далее определяем расширение рассматриваемого файла с Объектом
   const extension = path.extname(absolutePath).slice(1);
-  // в соответствии с определённым расширением преобразовываем данные из файла в удобночитаемый формат
+  // в соответствии с расширением преобразовываем данные из файла в удобночитаемый формат
   switch (extension) {
     case 'json':
       return JSON.parse(readFileSync(absolutePath, 'utf8'));
@@ -21,12 +21,12 @@ const parserFunc = (filePath) => {
 };
   /*
   if (path.extname(absolutePath).slice(1) === 'yml') {
-    return yaml.load(readFileSync(absolutePath, 'utf8')); // преобразование данных из файла в удобночитаемый формат
+    return yaml.load(readFileSync(absolutePath, 'utf8')); 
   } else if (path.extname(absolutePath).slice(1) === 'yaml') {
-    return yaml.load(readFileSync(absolutePath, 'utf8')); // преобразование данных из файла в удобночитаемый формат
+    return yaml.load(readFileSync(absolutePath, 'utf8')); 
   } else if (path.extname(absolutePath).slice(1) === 'json') {
-    return JSON.parse(readFileSync(absolutePath, 'utf8')); // преобразование данных из файла в удобночитаемый формат
+    return JSON.parse(readFileSync(absolutePath, 'utf8')); 
   }
-  return 'unexpected format of file'; // если ни один из предполагаемых форматов не определён, то возвращаем сообщение
+  return 'unexpected format of file'; 
 */
 export default parserFunc;
