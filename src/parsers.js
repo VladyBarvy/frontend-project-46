@@ -1,4 +1,4 @@
-import { load } from 'js-yaml'; //import yaml from 'js-yaml';
+import { load } from 'js-yaml';
 import { readFileSync } from 'node:fs';
 import path from 'path';
 
