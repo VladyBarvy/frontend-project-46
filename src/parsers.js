@@ -1,4 +1,4 @@
-import yaml from 'js-yaml';
+import { load } from 'js-yaml'; //import yaml from 'js-yaml';
 import { readFileSync } from 'node:fs';
 import path from 'path';
 
@@ -12,9 +12,9 @@ const parserFunc = (filePath) => {
     case 'json':
       return JSON.parse(readFileSync(absolutePath, 'utf8'));
     case 'yml':
-      return yaml.load(readFileSync(absolutePath, 'utf8'));
+      return load(readFileSync(absolutePath, 'utf8'));
     case 'yaml':
-      return yaml.load(readFileSync(absolutePath, 'utf8'));
+      return load(readFileSync(absolutePath, 'utf8'));
     default:
       throw new Error('unexpected format of file');
   }
