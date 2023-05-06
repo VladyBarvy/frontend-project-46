@@ -19,14 +19,4 @@ const parserFunc = (filePath) => {
       throw new Error('unexpected format of file');
   }
 };
-  /*
-  if (path.extname(absolutePath).slice(1) === 'yml') {
-    return yaml.load(readFileSync(absolutePath, 'utf8')); 
-  } else if (path.extname(absolutePath).slice(1) === 'yaml') {
-    return yaml.load(readFileSync(absolutePath, 'utf8')); 
-  } else if (path.extname(absolutePath).slice(1) === 'json') {
-    return JSON.parse(readFileSync(absolutePath, 'utf8')); 
-  }
-  return 'unexpected format of file'; 
-*/
 export default parserFunc;
