@@ -91,8 +91,8 @@ https://asciinema.org/a/5r50XDQPvrwoRllRud2egbMb4
 [![asciicast](https://asciinema.org/a/5r50XDQPvrwoRllRud2egbMb4.svg)](https://asciinema.org/a/5r50XDQPvrwoRllRud2egbMb4)
 
 Сравнение двух файлов с выводом результата в формате plain:
-https://asciinema.org/a/L6Uxi3zJHujAG05Lw2qI5VEDv
-[![asciicast](https://asciinema.org/a/L6Uxi3zJHujAG05Lw2qI5VEDv.svg)](https://asciinema.org/a/L6Uxi3zJHujAG05Lw2qI5VEDv)
+https://asciinema.org/a/dc4GmULoySdMXPImwQxDSgpfH
+[![asciicast](https://asciinema.org/a/dc4GmULoySdMXPImwQxDSgpfH.svg)](https://asciinema.org/a/dc4GmULoySdMXPImwQxDSgpfH)
 
 Сравнение двух файлов с выводом результата в формате json:
 https://asciinema.org/a/IFY7ii2s8y1Q1NKuF2Ytojhxl

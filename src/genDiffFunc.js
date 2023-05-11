@@ -1,5 +1,5 @@
 import parserFunc from './parsers.js';
-import formatter from '../formatters/index.js';
+import formatter from './formatters/index.js';
 import findDifferences from './findDiffFunc.js';
 
 const genDiff = (filePath1, filePath2, formatType = 'stylish') => {
